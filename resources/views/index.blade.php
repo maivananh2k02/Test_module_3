@@ -22,8 +22,14 @@
     @if(Session::has('delete_success'))
         <p class="alert-success">{{ Session::get('delete_success') }}</p>
     @endif
+    @if(Session::has('update_success'))
+        <p class="alert-success">{{ Session::get('update_success') }}</p>
+    @endif
+    @if(Session::has('store_success'))
+        <p class="alert-success">{{ Session::get('store_success') }}</p>
+    @endif
     <table class="table">
-        <thead style="background-color: #85f7c3">
+        <thead style="background-color: pink">
         <tr style="text-align: center">
             <th scope="col">STT</th>
             <th scope="col">Mã đại lý</th>
